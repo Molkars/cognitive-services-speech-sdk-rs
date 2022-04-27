@@ -64,7 +64,7 @@ fn main() {
         Command::new("tar").args(&args).status().unwrap();
     }
 
-    let lib_path = sdk_path.join("lib").join("x64");
+    let lib_path = sdk_path.join("lib").join("arm64");
     let mut inc_arg = String::from("-I");
     inc_arg.push_str(sdk_path.join("include").join("c_api").to_str().unwrap());
 
